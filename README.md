@@ -26,6 +26,23 @@ This project implements a simplified distributed file storage system with the fo
 - `utils.py`: Helper functions (logging, networking).
 
 ## Usage
-1. Start the 3 servers.
-2. Run the client to perform operations.
+### CLI Mode
+1. Start servers: `python3 server.py "New York"` (etc)
+2. Run client: `python3 client.py 9000`
+
+### Web UI (Recommended)
+1. Run the all-in-one script:
+   ```bash
+   ./run_system.sh
+   ```
+   This will start:
+   - 3 Storage Servers
+   - Web Client Middleware (Port 3000)
+   - React Frontend (Port 5173)
+2. Open `http://localhost:5173` in your browser.
+
+## Requirements
+- Python 3
+- Node.js & npm
+
 # DFMS
